@@ -1,10 +1,8 @@
 <template>
    <div style="margin: 50px;">
        <h4>Виберіть місто:</h4>
-
-       <select v-model="ot">
-           <option  v-for="city in goroda" v-bind:key="city.id" v-bind:value="city.Description">{{ city.Description}}</option>
-       </select>
+ <input v-model="ot" >
+      
        <button v-on:click="naytiOtdel">Знайти</button>
 
         <h4>Поштове відділення:</h4>
